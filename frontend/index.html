@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <style>
+        .form-wrapper{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Frontend</h3>
+
+        <div class="form-wrapper">
+            <form action="http://localhost:5000/books" method="post">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Book Title </label>
+                    <input type="text" class="form-control" id="title" name="title" placeholder="Book title here">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="author" class="form-label">Author </label>
+                    <input type="text" class="form-control" id="author" name="author" placeholder="Book author's name here">
+                </div>
+                
+                <div class="mb-3">
+                    <input type="Submit" value="Add Book" class="btn btn-primary">
+                </div>
+            
+            </form>
+        </div>
+    </div>
+
+    <script src="js/myscript.js"></script>
+    <script>
+        getBooks()
+    </script>
+</body>
+</html>
