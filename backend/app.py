@@ -33,7 +33,7 @@ def get_books():
             title = request.form.get('title', 'No data')
             author = request.form.get('author', 'No data')
 
-        elif request.form:
+        elif request.json:
             title = request.json.get('title', 'No data')
             author = request.json.get('author', 'No data')
 
