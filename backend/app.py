@@ -107,10 +107,11 @@ def update_book(id):
 def delete_book(id):
     found_book = Book.query.get_or_404(id)
 
-    db.session.delete(found_book)
-    db.session.commit()
 
     if found_book:
+        db.session.delete(found_book)
+        db.session.commit()
+        
         return jsonify({
             'success': True,
             'deleted': found_book.to_dico()
