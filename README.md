@@ -1,5 +1,5 @@
 # bookstore-flask-app
-Python (Flask-based) Bookstore RESTful API Application. 
+Book Resource CRUD as part of a Python (Flask-based) Bookstore RESTful API Application. 
 
 **Tools used:** 
 ---
